@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WordSpeed Teleprompter — scroll at the speed you actually speak</title>
+<meta name="description" content="A tiny Windows teleprompter that scrolls in words per minute. Opens .docx, .pdf and .txt. No ads, no account, works offline.">
+<meta property="og:title" content="WordSpeed Teleprompter">
+<meta property="og:description" content="Scroll at the speed you actually speak. Words per minute, not a slider.">
+<meta property="og:image" content="assets/icon.png">
+<link rel="icon" href="assets/icon.png">
+<style>
+  :root { --bg:#0e1014; --fg:#eef0f4; --muted:#99a1b0; --accent:#f0a227; --line:#242832; --card:#161a21; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f6f7f9; --fg:#12141a; --muted:#5b636f; --line:#e4e7ee; --card:#fff; } }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; min-height:100vh; background:var(--bg); color:var(--fg);
+    font:17px/1.6 "Segoe UI",-apple-system,"Helvetica Neue",Arial,"Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; padding:56px 24px;
+  }
+  .wrap { width:100%; max-width:640px; }
+  .head { display:flex; align-items:center; gap:16px; margin-bottom:34px; }
+  .head img { width:64px; height:64px; border-radius:14px; }
+  .name { font-size:22px; font-weight:600; letter-spacing:.2px; }
+  .byline { color:var(--muted); font-size:14px; }
+  h1 { font-size:38px; line-height:1.2; letter-spacing:-.6px; margin:0 0 18px; font-weight:650; }
+  h1 em { font-style:normal; color:var(--accent); }
+  p.lead { font-size:18px; color:var(--muted); margin:0 0 32px; }
+  ul { list-style:none; padding:0; margin:0 0 36px; }
+  li { display:flex; gap:12px; padding:11px 0; border-bottom:1px solid var(--line); font-size:16px; }
+  li:last-child { border-bottom:0; }
+  li b { font-weight:600; }
+  .badge {
+    display:inline-flex; align-items:center; gap:10px; background:var(--card);
+    border:1px solid var(--line); border-radius:10px; padding:12px 18px;
+    font-size:15px; color:var(--muted);
+  }
+  .badge span.k { color:var(--fg); font-weight:600; }
+  footer { margin-top:44px; font-size:14px; color:var(--muted); }
+  footer a { color:var(--muted); }
+  footer a:hover { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <img src="assets/icon.png" alt="">
+    <div>
+      <div class="name">WordSpeed Teleprompter</div>
+      <div class="byline">for Windows 10 &amp; 11</div>
+    </div>
+  </div>
+
+  <h1>Scroll at the speed you <em>actually speak</em>.</h1>
+  <p class="lead">A teleprompter measured in words per minute — not an abstract slider you have to guess at. One payment, no subscription, no account, no ads.</p>
+
+  <ul>
+    <li><b>140 wpm</b> means the same thing in every script you write. Change the font size and the speed stays the same.</li>
+    <li><b>Know your slot?</b> Type 6:30 and the app computes the speed, then shows the time remaining while you read.</li>
+    <li><b>Opens what you already have</b> — .docx, .pdf, .rtf, .md, .html, .txt. Drag the file onto the window.</li>
+    <li><b>Green and blue screen themes</b> with true chroma-key colours, plus six looks and per-paragraph dimming.</li>
+    <li><b>Never in your recording.</b> The window can be excluded from screen capture.</li>
+    <li><b>Eight languages</b>, follows your Windows language. 4 MB, no runtime to install.</li>
+  </ul>
+
+  <div class="badge"><span class="k">Microsoft Store</span> · coming soon</div>
+
+  <footer>
+    <a href="privacy/">Privacy policy</a> · published by Chanix
+  </footer>
+</div>
+</body>
+</html>
